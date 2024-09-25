@@ -1,22 +1,44 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    background-color: deepskyblue;
+    font-family: Rockwell;
+    color: midnightblue;
+}
+
+h1 {
+    color: midnightblue;
+    font-family: Rockwell;
+}
+
+p {
+    color: midnightblue;
+    font-family: Rockwell;
+    font-size: 25px;
+}
+
+h2 {
+    color: midnightblue;
+    font-family: Rockwell;
+    font-size: 35px;
+}
+
+nav {
+    font-family: Rockwell;
+    font-size: 35px;
+    box-shadow: 5px;
+}
+
+.navbar-brand {
+    color: midnightblue;
+    font-family: Rockwell;
+    font-size: 55px;
+}
+
+header {
+    background-color: lightskyblue;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: lightskyblue;
+    box-shadow: 10px;
 }

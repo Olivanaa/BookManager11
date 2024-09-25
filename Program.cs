@@ -1,3 +1,6 @@
+using BookManager11.Persistencia;
+using Microsoft.EntityFrameworkCore;
+
 namespace BookManager11
 {
     public class Program
@@ -8,6 +11,13 @@ namespace BookManager11
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<LivroDbContext>(
+               options =>
+               {
+                   options.UseSqlServer(builder.Configuration.GetConnectionString("conexao"));
+               }
+           );
+
 
             var app = builder.Build();
 

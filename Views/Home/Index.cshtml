@@ -1,8 +1,33 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Página Inicial";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h1>Bem-vindo ao Sistema de Gerenciamento de Livros</h1>
+
+<p>
+    Este é o seu sistema simples para gerenciar um catálogo de livros.
+</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Adicionar Novo Livro</h2>
+                <p class="card-text">Você pode adicionar novos livros ao catálogo clicando no botão abaixo.</p>
+                <a href="/Livros/Create" class="btn btn-primary">Adicionar Livro</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Listar Livros</h2>
+                <p class="card-text">Visualize todos os livros cadastrados clicando no botão abaixo.</p>
+                <a href="/Livros" class="btn btn-success">Ver Lista de Livros</a>
+            </div>
+        </div>
+    </div>
+
+
 </div>
